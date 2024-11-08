@@ -48,3 +48,4 @@ print(' - estimated vector components: \n'+\
           'estimated loadings lambda \n'+str(M_hat['1'])+'\n \n'+\
               'estimated loadings mu \n'+str(M_hat['2']))
     
+print()

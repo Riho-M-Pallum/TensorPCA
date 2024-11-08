@@ -10,6 +10,11 @@ import numpy as np
 from numpy import linalg as LA
 from scipy.stats import ortho_group
 from .base import factor2tensor
+from scipy.stats import random_correlation
+import TensorPCA.auxiliary_functions as aux
+import statsmodels.api as sm
+
+
 
 def DGP(shape, R):
     """
@@ -48,7 +53,8 @@ def DGP(shape, R):
     M = [F]
     for j in range(1,d):
         M.append(ortho_group.rvs(shape[j])[:,0:R])
-        
+    print(f"np.shape(M) {np.shape(M[0])} second {np.shape(M[1])} third {np.shape(M[2])}")
+    
     # generating scale component, singal strength
     s = np.sqrt(np.prod(shape)) * np.array(range(R,0,-1))
     # s = np.sqrt(np.prod(shape)) * np.array([2,0.8])
@@ -56,7 +62,7 @@ def DGP(shape, R):
     Y = factor2tensor(s,M)
     
     # generating idiosyncratic noise
-    sig_u = 1
+    sig_u = 0
     U = sig_u * np.random.normal(0,1,shape)
     
     # add noise to tensor Y
@@ -106,7 +112,6 @@ def DGP_alt(shape, R, ar_coefficients, seed, f_std = 1, error_std = 1):
     M = [F]
     for j in range(1,d):
         M.append(ortho_group.rvs(shape[j])[:,0:R])
-    print(shape(M))
     # generating scale component, singal strength
     s = np.sqrt(np.prod(shape)) * np.array(range(R,0,-1))
     # s = np.sqrt(np.prod(shape)) * np.array([2,0.8])
@@ -122,6 +127,48 @@ def DGP_alt(shape, R, ar_coefficients, seed, f_std = 1, error_std = 1):
     Y = Y + U
     return Y, s, M
 
+def DGP_2d_dyn_fac(I,T, dynamic_factors, lags, ar_coefficients, noise_scale, seed):
+
+    np.random.seed(seed)
+
+    f = np.zeros((T,dynamic_factors))
+    eta = np.random.normal(0, 0.1, (T,dynamic_factors))
+
+    for factor in range(dynamic_factors):
+        # Statsmodels requires us to specify the AR polynomial to generate an AR process, hence 
+        # to get the AR coefficients we have to add a 1 to the start and then take the negative of our specified AR coefficients
+        # Could rewrite later to accept just the ar_polynomial!!!
+        ar_params = -1*ar_coefficients[:,factor]
+        ar_params = np.concatenate(([1], ar_params) )
+        ar_process = sm.tsa.arma_generate_sample(ar = ar_params, ma = [1],nsample = T, burnin = 0, scale = 1)  # AR(2), second value is thee lag polynomial for the MA bit of the process
+        f[:,factor] = ar_process
+    
+    
+    F = []
+    for r in range(lags+1):
+        f_slice = f[r:T-lags+r, :] if lags > 0 else f
+        # If we normalise we lose the exact representation, so instead I just divide by the min of the two norms
+        #f_slice = f_slice/min(np.linalg.norm(f_slice, axis = 0))
+        for i in range(dynamic_factors):
+            F.append(f_slice[:,i])
+        
+    F = np.array(F).T
+    #F = F/np.linalg.norm(F,axis = 0)
+    L = np.random.normal(0,1, size = (I, dynamic_factors*(lags+1)))
+    #L = L/np.linalg.norm(L, axis = 0)
+    M = [L,F]
+    s = np.ones(shape = dynamic_factors*(lags+1))#[1,1]#np.sqrt(I*T) * np.random.normal(0,1, size = dynamic_factors*(lags+1))
+    #Y = factor2tensor(s,M)
+    Y = noise_scale * np.random.normal(0,1,(I,T-lags))
+    for i in range(dynamic_factors*(lags+1)):
+        Y += np.outer(L[:,i], F[:,i])
+    s = np.linalg.norm(F,axis = 0) * np.linalg.norm(L, axis = 0)
+    # generating idiosyncratic noise
+    # add noise to tensor Y
+    
+    return Y, s, M
+
+    
 
 def gen_non_orthogonal_multiple_dynamic_factors_correlated_mu_lambda(I,J,T, seed, ar_coefficients, noise_scale, y_scale, dynamic_factors, lags,
     mu_mean, mu_sigma, lambda_mean, lambda_sigma, case = 1):
@@ -183,7 +230,21 @@ def gen_non_orthogonal_multiple_dynamic_factors_correlated_mu_lambda(I,J,T, seed
         raise Exception("Make sure that the case is either 0 or 1, read the docstring for more information.")
     M = np.array(M)
     L = np.array(L)
+    
     # Generate F
+    f = np.zeros((T,dynamic_factors))
+    eta = np.random.normal(0, 0.1, (T,dynamic_factors))
+    
+    """
+    for factor in range(dynamic_factors):
+        # Statsmodels requires us to specify the AR polynomial to generate an AR process, hence 
+        # to get the AR coefficients we have to add a 1 to the start and then take the negative of our specified AR coefficients
+        # Could rewrite later to accept just the ar_polynomial!!!
+        ar_params = -1*ar_coefficients[:,factor]
+        ar_params = np.concatenate(([1], ar_params) )
+        ar_process = sm.tsa.arma_generate_sample(ar = ar_params, ma = [1],nsample = T, burnin = 0, scale = 0.001)  # AR(2), second value is thee lag polynomial for the MA bit of the process
+        f[:,factor] = ar_process
+    """
     f = np.zeros((T,dynamic_factors))
     eta = np.random.normal(0, 1, (T,dynamic_factors))
 
@@ -195,25 +256,34 @@ def gen_non_orthogonal_multiple_dynamic_factors_correlated_mu_lambda(I,J,T, seed
             f[t,:] = np.sum(np.multiply(ar_coefficients, f[t-lags:t,:][::-1]), axis = 0) + eta[t, :]
     else:
         f = eta
-    print(f"this is f{f}")
     
     # Generate Y
     Y = noise_scale*np.random.normal(0, 1, (I, J, T-lags))
   
     F = []
-    for r in range(lags+1):
-        f_slice = f[r:T-lags+r, :] if lags > 0 else f
-        # If we normalise we lose the exact representation, so instead I just divide by the min of the two norms
-        f_slice = f_slice/min(np.linalg.norm(f_slice, axis = 0))
-        for i in range(dynamic_factors):
-            F.append(f_slice[:,i])
-            sigma = y_scale*np.random.normal(0,1) 
-            temp = np.multiply.outer(np.multiply.outer(L[:,2*r+i], M[:,2*r+i]),f_slice[:,i])
-            Y += sigma*temp
-
-    F = np.array(F).T
+    counter = 0
+    s = []
+    L_norm = np.linalg.norm(L, axis = 0)
+    Mu_norm = np.linalg.norm(M, axis = 0)
     L = L/np.linalg.norm(L, axis = 0)    
     M = M/np.linalg.norm(M, axis = 0)
     
+    for r in range(lags+1):
+        f_slice = f[r:T-lags+r, :] if lags > 0 else f
+        f_slice_norm = np.linalg.norm(f_slice, axis = 0)
+        f_slice = f_slice/f_slice_norm
+        for i in range(dynamic_factors):
+            F.append(f_slice[:,i])
+            
+            #sigma = y_scale*np.random.normal(0,1)
+            sigma = L_norm[counter]*Mu_norm[counter]*f_slice_norm[i]#np.linalg.norm(L_norm[counter])*np.linalg.norm(M[:,counter])*np.linalg.norm(f_slice[:,i])
+            s.append(sigma)
+            temp = sigma*np.multiply.outer(np.multiply.outer(L[:,counter], M[:,counter]),f_slice[:,i])
+            #print(f"rank {counter} bit of Y {temp}")
+            Y += temp#*sigma
+            counter += 1
+
+    F = np.array(F).T
+    #F = F/np.linalg.norm(F, axis = 0)
     #print(f"Final Y first value {Y[0,0,0]}")
-    return Y, [L, M, F]
+    return Y, [L, M, F], s

@@ -43,7 +43,9 @@ def factor2tensor(s, M):
     A tensor.
 
     """
-    
+    #print(s)
+    #print(M)
+
     R = len(s)
     
     d = len(M)
