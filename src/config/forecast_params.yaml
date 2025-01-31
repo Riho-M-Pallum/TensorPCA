@@ -1,0 +1,35 @@
+repetitions: 50
+range_dict:
+  ranges:
+    - start: 40
+      stop: 40
+    - start: 12
+      stop: 12
+    - start: 50
+      stop: 50
+  n_vals: 1
+noise_scale: 0.01
+max_horizon: 2
+dgp: package.dgp_classes.base_F_AR_DGP
+dgp_kwargs: 
+  - n_factors: 2
+    lags: 0
+    ar_coefficients:
+      - [0.1, 0.1]
+  - n_factors: 2
+    lags: 0
+    ar_coefficients:
+      - [0.3, 0.3]
+  - n_factors: 2
+    lags: 0
+    ar_coefficients:
+      - [0.5, 0.5]
+  - n_factors: 2
+    lags: 0
+    ar_coefficients:
+      - [0.7, 0.7]
+  - n_factors: 2
+    lags: 0
+    ar_coefficients:
+      - [0.9, 0.9]
+workers: 8

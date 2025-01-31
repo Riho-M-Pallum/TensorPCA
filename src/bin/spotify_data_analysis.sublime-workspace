@@ -1,0 +1,551 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ith",
+				"ith_outer_prods"
+			],
+			[
+				"base",
+				"basesline_prediction_error"
+			],
+			[
+				"s_ht",
+				"s_hat_ALS"
+			],
+			[
+				"mat",
+				"matching_columns"
+			],
+			[
+				"upd",
+				"updated_factors"
+			],
+			[
+				"dgp",
+				"dgp_instance"
+			],
+			[
+				"con",
+				"convergence_criteria"
+			],
+			[
+				"factor",
+				"factor_list"
+			],
+			[
+				"fa",
+				"factor_list"
+			],
+			[
+				"ALS_",
+				"ALS_Mu"
+			],
+			[
+				"corpus",
+				"corpus_folder"
+			],
+			[
+				"exi",
+				"exit_status"
+			],
+			[
+				"cohere",
+				"coherence_folder"
+			],
+			[
+				"model",
+				"model_folder"
+			],
+			[
+				"sta",
+				"statement_tokens"
+			],
+			[
+				"num",
+				"num_topics"
+			],
+			[
+				"statement",
+				"statement_tokens"
+			],
+			[
+				"corps",
+				"corpus_folder"
+			],
+			[
+				"cohe",
+				"coherence_model"
+			],
+			[
+				"coherence",
+				"coherence_score"
+			],
+			[
+				"state",
+				"statement_tokens"
+			],
+			[
+				"F_",
+				"F_hat"
+			],
+			[
+				"F",
+				"F_hat"
+			],
+			[
+				"rota",
+				"rotated_data_alt"
+			],
+			[
+				"rot",
+				"rotated_data_alt"
+			],
+			[
+				"roted",
+				"rotated_data_alt"
+			],
+			[
+				"F_hat",
+				"F_hat_rotated_to_recover_lags"
+			],
+			[
+				"baseline",
+				"baseline_predicted_Y"
+			],
+			[
+				"mea",
+				"mean_by_value"
+			],
+			[
+				"o",
+				"Exception"
+			],
+			[
+				"predi",
+				"PredictionProcess"
+			],
+			[
+				"observ",
+				"observed_Y"
+			],
+			[
+				"ar",
+				"ar_scale"
+			],
+			[
+				"lag",
+				"lag_order"
+			],
+			[
+				"predictio",
+				"prediction_error"
+			],
+			[
+				"predic",
+				"prediction_error_by_country"
+			],
+			[
+				"ov",
+				"observed_T"
+			],
+			[
+				"observe",
+				"observed_Y"
+			],
+			[
+				"obs",
+				"observed_T"
+			],
+			[
+				"manu",
+				"manual_Y"
+			],
+			[
+				"unro",
+				"unrotated_data"
+			],
+			[
+				"ith_",
+				"ith_outer_prods"
+			],
+			[
+				"ar_coe",
+				"ar_coefficients"
+			],
+			[
+				"__",
+				"__init__"
+			],
+			[
+				"esti",
+				"EstimationProcess"
+			],
+			[
+				"estim",
+				"EstimationProcess"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"termi",
+				"Terminal: Open in project folder"
+			],
+			[
+				"conda:",
+				"Conda: Activate Environment"
+			],
+			[
+				"sublimelinter",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"Sublimelinter",
+				"Preferences: SublimeLinter Settings"
+			],
+			[
+				"sublimeLinter",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"sublimeLintr",
+				"SublimeLinter: Reload SublimeLinter and its Plugins"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"linter",
+				"SublimeLinter: Toggle Highlights"
+			],
+			[
+				"instll",
+				"Package Control: Install Package"
+			],
+			[
+				"intall",
+				"Package Control: Install Package"
+			],
+			[
+				"conda",
+				"Conda: Activate Environment"
+			],
+			[
+				"term",
+				"Terminal: Open in project folder"
+			],
+			[
+				"ter",
+				"Terminal: Open in project folder"
+			],
+			[
+				"install",
+				"Conda: Install Package"
+			],
+			[
+				"termina",
+				"Terminal: Open"
+			],
+			[
+				"Term",
+				"Terminal: Open in project folder"
+			],
+			[
+				"terminl",
+				"Terminal: Open"
+			],
+			[
+				"cona",
+				"Conda: Activate Environment"
+			],
+			[
+				"conda:inst",
+				"Conda: Install Package"
+			],
+			[
+				"codna",
+				"Conda: Install Package"
+			],
+			[
+				"package control: insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/riho8/Documents/Programming/Spotify_data"
+	],
+	"file_history":
+	[
+		"/C/Users/riho8/AppData/Roaming/jupyter/runtime/jpserver-10528-open.html",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/refactoredTPCA/src/package/auxiliary_functions.py",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/refactoredTPCA/src/bin/test.py",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/refactoredTPCA/src/config/forecast_params.yaml",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/refactoredTPCA/submit.sh",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/refactoredTPCA/submit_forecast.sh",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/refactoredTPCA/src/bin/forecast.py",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/refactoredTPCA/src/bin/simulate.py",
+		"/C/Users/riho8/Documents/Programming/Python shit/Tutoria.py",
+		"/C/Users/riho8/AppData/Roaming/jupyter/runtime/jpserver-18452-open.html",
+		"/C/Users/riho8/Documents/Programming/Spotify_data/project",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/TensorPCA_fork/TensorPCA/3d_prediction_comparison.py",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/TensorPCA_fork/TensorPCA/3d_prediction_test.py",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/refactoredTPCA/src/package/dgp_classes.py",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/refactoredTPCA/src/config/simulate_params.yaml",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/refactoredTPCA/src/package/tensorpca.py",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/refactoredTPCA/src/package/dgp.py",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/refactoredTPCA/config/simluate_params.yaml",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/refactoredTPCA/setup.py",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/refactoredTPCA/bin/simulate.py",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/refactoredTPCA/src/simulate.py",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/refactoredTPCA/src/auxiliary_functions.py",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/refactoredTPCA/src/params.yaml",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/refactoredTPCA/results.log",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/refactoredTPCA/src/dgp_classes.py",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/refactoredTPCA/params.yaml",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/TensorPCA_fork/TensorPCA/3d_ALS_asymptotics.py",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/TensorPCA_fork/TensorPCA/TensorPCA/auxiliary_functions.py",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/refactoredTPCA/src/tensorpca.py",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/TensorPCA_fork/TensorPCA/TensorPCA/dgp_classes.py",
+		"/C/Users/riho8/Downloads/Spotify Extended Streaming History/Streaming_History_Audio_2024_6.json",
+		"/C/Users/riho8/Downloads/Spotify Extended Streaming History/Streaming_History_Video_2024.json",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/TensorPCA_fork/Cleaned/classes/dgp_classes.py",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/TensorPCA_fork/TensorPCA/TensorPCA/tensorpca.py",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/TensorPCA_fork/Cleaned/classes/auxiliary_functions.py",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/TensorPCA_fork/TensorPCA/TensorPCA/__init__.py",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/TensorPCA_fork/TensorPCA/3d_reconstruction_asymptotics.py",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/TensorPCA_fork/Cleaned/scripts/3d_ALS_recovery_simulation.py",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/TensorPCA_fork/TensorPCA/example.py",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/TensorPCA_fork/TensorPCA/FHLR_estimationy_test.py",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/TensorPCA_fork/TensorPCA/FHLR_vs_me_recovery_comparison.py",
+		"/C/Users/riho8/.bash_profile",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/TensorPCA_fork/TensorPCA/3d_reconstruction.py",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/TensorPCA_fork/TensorPCA/TensorPCA/dgp.py",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/TensorPCA_fork/TensorPCA/TensorPCA/dists.py",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/TensorPCA_fork/TensorPCA/TensorPCA/base.py",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/TensorPCA_fork/TensorPCA/TensorPCA/distributions/k1K10.csv",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/TensorPCA_fork/Cleaned/classes/k5K10.csv",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/TensorPCA_fork/Cleaned/classes/k1K9.csv",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/TensorPCA_fork/Cleaned/classes/k1K5.csv",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/TensorPCA_fork/Cleaned/classes/k1K10.csv",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/TensorPCA_fork/TensorPCA/seaborn_violin_plot.png",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/TensorPCA_fork/TensorPCA/test_uniqueness_of_decomp.py",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/TensorPCA_fork/TensorPCA/TensorPCA/test_uniqueness_of_solution.py",
+		"/C/Users/riho8/Documents/School/Oxford/RA/INET/paperwork/Blockchain_tut_link.txt",
+		"/C/Users/riho8/Documents/School/Oxford/RA/McMahon/Code_and_data/Github/Cluster_submission/submit_multiple_train_eval.sh",
+		"/C/Users/riho8/Documents/School/Oxford/RA/McMahon/Code_and_data/Github/Cluster_submission/submit_cleaning.sh",
+		"/C/Users/riho8/Documents/School/Oxford/RA/McMahon/Code_and_data/Github/Cluster_submission/clean_and_create_corpus.py",
+		"/C/Users/riho8/Documents/School/Oxford/RA/McMahon/Code_and_data/Github/Cluster_submission/evaluate_model_coherence.py",
+		"/C/Users/riho8/Documents/School/Oxford/RA/McMahon/Code_and_data/Github/Cluster_submission/LDA_cluster_script.py",
+		"/C/Users/riho8/Documents/School/Oxford/RA/McMahon/Code_and_data/Github/Cluster_submission/Readme.txt",
+		"/C/Users/riho8/Documents/School/Oxford/RA/McMahon/Code_and_data/Github/Cluster_submission/test.py",
+		"/C/Users/riho8/Documents/School/Oxford/RA/McMahon/Code_and_data/Github/Cluster_submission/submit_evaluate.sh",
+		"/C/Users/riho8/Documents/School/Oxford/RA/McMahon/Code_and_data/Github/Cluster_submission/get_top_models.py",
+		"/C/Users/riho8/Documents/School/Oxford/RA/McMahon/Code_and_data/Github/Cluster_submission/submit_multiple_train_eval.py",
+		"/C/Users/riho8/Documents/School/Oxford/RA/McMahon/Code_and_data/Github/Cluster_submission/submit.sh",
+		"/C/Users/riho8/Documents/School/Oxford/RA/McMahon/Code_and_data/Github/Cluster_submission/Cleaned_FOMC-transcripts/1987-08.csv",
+		"/C/Users/riho8/AppData/Roaming/jupyter/runtime/jpserver-21388-open.html",
+		"/C/Users/riho8/AppData/Roaming/jupyter/runtime/jpserver-9316-open.html",
+		"/C/Users/riho8/Documents/School/Oxford/RA/McMahon/Code_and_data/Github/Cluster_submission/coherence_results/lda.model50_topics/coherence.txt",
+		"/C/Users/riho8/Documents/School/Oxford/RA/McMahon/Code_and_data/Github/Cleaned_FOMC-transcripts/2017-03.csv",
+		"/C/Users/riho8/Documents/School/Oxford/RA/McMahon/Code_and_data/Github/.git/COMMIT_EDITMSG",
+		"/C/Users/riho8/Documents/School/Oxford/RA/McMahon/Code_and_data/Github/Cluster_submission/LDA_models/topics.txt",
+		"/C/Users/riho8/Documents/School/Oxford/RA/McMahon/Code_and_data/Github/Cluster_submission/sharded_corpus/statement_tokens.txt",
+		"/C/Users/riho8/Documents/School/Oxford/RA/McMahon/Code_and_data/Github/Cleaned_FOMC-trascripts/1990-02.csv",
+		"/C/Users/riho8/Documents/School/Oxford/RA/McMahon/Code_and_data/Github/Cleaned_FOMC-trascripts/2018-03.csv",
+		"/C/Users/riho8/Documents/School/Oxford/RA/McMahon/Code_and_data/Github/Cleaned_FOMC-trascripts/1988-02.csv",
+		"/C/Users/riho8/Documents/School/Oxford/RA/McMahon/Code_and_data/Github/Cluster_submission/Cleaned_FOMC-transcripts/1990-02.csv",
+		"/C/Users/riho8/AppData/Roaming/jupyter/runtime/jpserver-22804-open.html",
+		"/C/Users/riho8/AppData/Roaming/jupyter/runtime/jpserver-13132-open.html",
+		"/C/Users/riho8/AppData/Roaming/jupyter/runtime/jpserver-16112-open.html",
+		"/C/Users/riho8/AppData/Roaming/jupyter/runtime/jpserver-17744-open.html",
+		"/C/Users/riho8/AppData/Roaming/jupyter/runtime/jpserver-8676-open.html",
+		"/C/Users/riho8/Documents/School/Oxford/RA/McMahon/Code_and_data/Github/data_files/199002.txt",
+		"/C/Users/riho8/Documents/School/Oxford/RA/McMahon/Code_and_data/Github/Cluster_submission/requirements.txt",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/TensorPCA_fork/TensorPCA/tensor_rotation_test.py",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/TensorPCA_fork/TensorPCA/super_test.py",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/TensorPCA_fork/TensorPCA/TensorPCA/estimation_classes.py",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/TensorPCA_fork/TensorPCA/3d_reconstruction_test_2.py",
+		"/C/Users/riho8/Documents/School/Oxford/RA/McMahon/Code_and_data/Github/Cluster_submission/environment.yml",
+		"/C/Users/riho8/Documents/School/Oxford/RA/McMahon/Code_and_data/Github/LDA_cluster_script.py",
+		"/C/Users/riho8/Documents/School/Oxford/RA/McMahon/Code_and_data/Github/LDA_script.py",
+		"/C/Users/riho8/Documents/School/Oxford/RA/McMahon/Code_and_data/Github/Cleaned_FOMC-transcripts/temp/2008-09.csv",
+		"/C/Users/riho8/AppData/Roaming/jupyter/runtime/jpserver-16824-open.html",
+		"/C/Users/riho8/Documents/School/Oxford/Classes/Topics_in_metrics/James_duffy/Presentation/docs/index.html",
+		"/C/Users/riho8/Documents/School/Oxford/Classes/Topics_in_metrics/James_duffy/Presentation/.git/COMMIT_EDITMSG",
+		"/C/Users/riho8/Documents/School/Oxford/Classes/Topics_in_metrics/James_duffy/Presentation/.git/MERGE_MSG",
+		"/C/Users/riho8/Documents/School/Oxford/Classes/Topics_in_metrics/James_duffy/Presentation/_quarto.yml",
+		"/C/Users/riho8/Documents/School/Oxford/Classes/Topics_in_metrics/James_duffy/Presentation/docs/about.html",
+		"/C/Users/riho8/Documents/School/Oxford/Classes/Topics_in_metrics/Presentation.html",
+		"/C/Users/riho8/Documents/School/Oxford/Classes/Topics_in_metrics/.git/COMMIT_EDITMSG",
+		"/C/Users/riho8/Documents/School/Oxford/Classes/Topics_in_metrics/reveal.js/index.html",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/TensorPCA_fork/TensorPCA/TensorPCA/transformation_classes.py",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/TensorPCA_fork/TensorPCA/TensorPCA/prediction_class.py",
+		"/C/Users/riho8/Documents/School/Oxford/Thesis/Tensor_stuff/TensorPCA_fork/TensorPCA/TensorPCA/simulation_class.py"
+	],
+	"find":
+	{
+		"height": 27.2
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": true,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.2
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 201.0
+	},
+	"output.exec":
+	{
+		"height": 220.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Conda/Conda.sublime-build",
+	"project": "spotify_data_analysis.sublime-project",
+	"replace":
+	{
+		"height": 51.2
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 274.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

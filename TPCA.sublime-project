@@ -1,0 +1,13 @@
+{
+    "folders": [
+        {
+            "path": ".",
+            "folder_exclude_patterns": [".git", "venv"],
+        }
+    ],
+    "settings": {
+        "tab_size": 4,
+        "translate_tabs_to_spaces": true,
+    },
+    "conda_environment": "C:\\Users\\riho8\\miniconda3\\envs\\tensorPCA",
+}
